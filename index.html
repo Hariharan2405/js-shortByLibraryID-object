@@ -1,0 +1,56 @@
+<!DocType html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="">
+		<meta name="keywords" content="HTML,JavaScript">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Short by LibraryID</title>
+	
+	
+	</head>
+	
+	<body>
+		<script>
+			
+			console.log("--------------------short by LibraryID---------------------");
+			var library = [
+						{
+						title: 'The Road Ahead',
+						author: 'Bill Gates',
+						libraryID: 1254
+						},
+						{
+						title: 'Walter Isaacson',
+						author: 'Steve Jobs',
+						libraryID: 4264
+						},
+						{
+						title: 'Mockingjay: The Final Book of The Hunger Games',
+						author: 'Suzanne Collins',
+						libraryID: 3245
+						},
+						{
+						title: 'Adventures of Tom Sawyer',
+						author: 'Mark Twain',
+						libraryID: 1345
+						},
+						{
+						title: 'Adventures of Sherlock Holmes',
+						author: 'Sir Arthur Conan Doyle',
+						libraryID: 2245
+						}
+						];
+						
+						
+						library.sort(function(a,b){
+							return a.libraryID-b.libraryID;
+						})
+						for(x in library){
+							console.log(library[x])
+						}	
+				
+				
+		</script>
+	</body>
+</html>
